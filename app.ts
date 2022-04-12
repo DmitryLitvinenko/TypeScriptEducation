@@ -1,13 +1,7 @@
-// bad syntax
-/*const person:  {
-    name: string;
-    age: number;
-} = {*/
-
-//good syntax
 const person = {
     name: "Dmitry",
-    age: 29
+    age: 29,
+    hobbies: ['Sports', 'Poker']
 };
 
-console.log(person.name)
+console.log(person.hobbies)
