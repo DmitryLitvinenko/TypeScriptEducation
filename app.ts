@@ -1,6 +1,8 @@
+type Combinable = number | string; // we can do any type, for example for union types
+
 function combine(
-    input1: number | string,
-    input2: number | string,
+    input1: Combinable,
+    input2: Combinable,
     resultConversion: string) {
     let result;
     if (typeof input1 === 'number' && typeof input2 === 'number' || resultConversion === "as-number") {
