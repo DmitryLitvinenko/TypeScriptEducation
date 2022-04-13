@@ -1,4 +1,9 @@
-const person = {
+const person: {
+    name: string;
+    age: number;
+    hobbies: string[];
+    role: [number, string]; // tuple type
+} = {
     name: "Dmitry",
     age: 29,
     hobbies: ['Bowling', 'Poker'],
@@ -6,7 +11,7 @@ const person = {
 };
 
 person.role.push('admin'); //replace value with the same string
-person.role[1] = 10; //adding value to 1 position
+//person.role[1] = 10; //adding value to 1 position
 
 for (const hobby of person.hobbies) console.log(hobby);
 
