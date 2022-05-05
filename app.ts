@@ -10,3 +10,5 @@ printResult(add(5, 12));
 
 let combineValues: Function = add;
 console.log(combineValues(1, 2));
+
+//test
